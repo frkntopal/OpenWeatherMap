@@ -1,3 +1,16 @@
+# *Hello Everyone*
+
+## *I used the openweathermap api when developing this project and I got help from the axios library when I was fetch data.This project shows the current weather conditions of the cities we have entered into the input areas and the 5-day weather forecast.*
+
+### *I added gifs to the background with condition expressions to make it a beautiful image.*
+![Ekran Görüntüsü (105)](https://user-images.githubusercontent.com/100241189/226869495-cf1a7731-d98d-4f1c-95c4-017c10a3cd3c.png)
+
+### *You can also see the video of my project from my linkedin account : [LinkedIn](https://www.linkedin.com/feed/update/urn:li:ugcPost:7044253946290278400/)* 
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
