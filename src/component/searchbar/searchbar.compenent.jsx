@@ -11,25 +11,22 @@ const { saveWeatherData } = useContext(WeatherContext);
   const inputRef = useRef();
 
   const handleInputChange = (event) => {
-    setCity(event.target.value);
-  };
-  
+    setCity(event.target.value);    
+  };  
 
   const handleSearch = async (event) => {
     event.preventDefault();
   
     const url = 'https://api.openweathermap.org/data/2.5/weather';
     const key = '9e06b5a1281bc72228b7f14c9e850bb5';
-  
+
     try {
       const response = await axios.get(`${url}?q=${city}&appid=${key}&units=metric`);      
       inputRef.current.value='';
       console.log(response.data);
-      saveWeatherData(response.data);
-      // Burada response.data'daki hava durumu bilgilerini Mainmenu componentine iletmek için gerekli işlemleri yapabilirsiniz.
+      saveWeatherData(response.data);      
     } catch (error) {
-      console.error(error);
-      // Hata durumunda kullanıcıya bir mesaj göstermek için gerekli işlemleri yapabilirsiniz.
+      console.error(error);     
     }
   };
 
